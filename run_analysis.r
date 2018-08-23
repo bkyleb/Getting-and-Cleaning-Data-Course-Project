@@ -53,4 +53,4 @@ average.ds<-aggregate(activity[,3:ncol(activity)],list(Subject=activity$Subject,
 tidy.data<-average.ds[order(average.ds$Subject,average.ds$Activity),]
 
 ##STEP 9:output tidy data set
-write.table(tidy.data,file="TidyData.txt",quote = FALSE)
+write.table(tidy.data,file="TidyData.txt", row.names = FALSE)
